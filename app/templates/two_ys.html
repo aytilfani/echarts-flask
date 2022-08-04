@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<div class="container" id="main">
+    <h1>Calendar Heatmap</h1>
+</div>
+
+<script src={{ url_for('static', filename='scripts/echarts.js' ) }}></script>
+
+
+<script type="text/javascript" src={{ url_for('static', filename='scripts/two_ys.js' ) }}></script>
+
+
+{% endblock %}

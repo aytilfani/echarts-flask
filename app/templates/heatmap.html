@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<div class="container" id="main">
+    <h1>Heatmap</h1>
+</div>
+
+<div class="container" id="main1">
+    <h2>Heatmap1</h2>
+</div>
+
+<script src={{ url_for('static', filename='scripts/echarts.js' ) }}></script>
+
+<script>
+    var data1 = {{ data | safe }}
+    var hours = {{ hours | safe }}
+    var days = {{ days | safe }}
+    var data2 = {{ data1 | safe }}
+    var days1 = {{ days1 | safe}}
+</script>
+
+<script type="text/javascript" src={{ url_for('static', filename='scripts/main.js' ) }}></script>
+
+
+{% endblock %}

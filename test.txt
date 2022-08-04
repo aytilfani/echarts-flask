@@ -1,0 +1,4 @@
+curl --request GET \
+	--url 'https://meteostat.p.rapidapi.com/stations/meta?id=10637' \
+	--header 'x-rapidapi-host: meteostat.p.rapidapi.com' \
+	--header 'x-rapidapi-key: {c2ca1edfa6msha55efc166d1c59ep1057cdjsn243d39d2ab2c}'

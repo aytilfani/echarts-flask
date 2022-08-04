@@ -1,0 +1,8 @@
+import pandas as pd
+
+
+data = read_csv("weather.csv")
+
+months = data["month"].tolist()
+temp = data("avg_temp (°C)").tolist()
+
